@@ -26,7 +26,7 @@
             <h1>Dev <span class="font-bold">Board</span></h1>
         </div>
         
-        <button  class="font-bold bg-[#3752FD] text-[#FFFFFF] p-4 rounded-2xl">Back to Desk</button>
+        <button id="desk" class="font-bold bg-[#3752FD] text-[#FFFFFF] p-4 rounded-2xl">Back to Desk</button>
         
     </nav>
     <main class="text-center mt-4">
@@ -48,6 +48,50 @@
             
         </p>
         </div>
+
+        <div class="text-left my-5 bg-[#FFFFFF] p-5 rounded-xl">
+            <h1 class="font-bold text-xl mb-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <hr class="border-b-2">
+            <p>
+                innerHTML,innerText and textContent are used for DOM manupulation in Js.<br>
+                (i)innerHTML gives the html code inside an Element <br>
+                (ii) innerText gives only the text content inside an element <br>
+                (iii) textContent it sets of gets the text content of an element <br>
+
+        </p>
+        </div>
+
+        <div class="text-left my-5 bg-[#FFFFFF] p-5 rounded-xl">
+            <h1 class="font-bold text-xl mb-3">Question-3: What is event delegation in the DOM?</h1>
+            <hr class="border-b-2">
+            <p class="text-justify">
+                Event Delegation is a pattern based upon the concept of Event Bubbling. It is an event-handling pattern that allows you to handle events at a higher level in the DOM tree other than the level where the event was first received.
+                By default, events triggered on an element propagate up the DOM tree to the element's parent, its ancestors, and on up until the root element (html).
+                With event delegation, instead of handling the click event on the button, you can handle it on the div.
+                The idea is that you "delegate" the handling of an event to a different element (in this case, the div, which is a parent element) instead of the actual element (the button) that received the event.
+                The event object has a target property which contains information about the element that actually received the event. On target.tagName, we get the name of the tag for the element, and we check if it's BUTTON.
+                With this code, when you click the button, the event bubbles up to the div which handles the event.Event Delegation is a useful pattern that allows you to write cleaner code, and create fewer event listeners with similar logic.
+                With event delegation, you create fewer event listeners and perform similar events-based logic in one place. This makes it easier for you to add and remove elements without having to add new or remove existing event listeners.
+                Event delegation is possible because of event propagation in the DOM, where the event a child element receives is also passed to the child's parent and ancestors.
+            
+        </p>
+        </div>
+
+        <div class="text-left my-5 bg-[#FFFFFF] p-5 rounded-xl">
+            <h1 class="font-bold text-xl mb-3">Question-4: What is event bubbling in the DOM?</h1>
+            <hr class="border-b-2">
+            <p>Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object[2] (Provided the handler is initialized). It is one way that events are handled in the browser. Events are actions done by the user such as a button click, changing a field etc. Event handlers are used to execute code when a particular kind of user interface event occurs, such as when a button has been clicked or when a webpage has completed loading.
+        </p>
+        </div>
+
+        <div class="text-left my-5 bg-[#FFFFFF] p-5 rounded-xl">
+            <h1 class="font-bold text-xl mb-3">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <hr class="border-b-2">
+            <p>Creating a new element with document.createElement is the first step in using JavaScript to add, remove, and create elements. Let newElement = document.createElement('div'); then use newElement to add some text to it. This is an example of how to create a div element.'Hello, this is a new div!' goes the textContent. This element can be added to the body of the document by writing document.body.appendChild(newElement); alternatively, if you wish to add it to a particular parent element, use document.getElementById('parentElement') to retrieve the parent first, and then use parent.appendChild(newElement). You may either use the remove() function on the element itself, as in let elementToRemove = document.getElementById('elementId'); elementToRemove.remove(); or you can delete it via its parent by first fetching the parent element and then calling parent.take awayChild(child),
+
+        </p>
+        </div>
     </main>
+    <script src="script2.js"></script>
 </body>
 </html>

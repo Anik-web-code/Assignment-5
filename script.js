@@ -84,6 +84,10 @@ function clear(){
 const clearButton = document.getElementById('btn-clear');
 clearButton.addEventListener('click',() => clear());
 
+const blogPage = document.getElementById('blog-page');
+blogPage.onclick = function (){
+    window.location.href = 'blog.html';
+}
 
 
 
