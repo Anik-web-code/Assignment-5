@@ -89,7 +89,17 @@ blogPage.onclick = function (){
     window.location.href = 'blog.html';
 }
 
+let colors = ['black', 'red', 'aqua', 'blue', 'red', '#3752FD'];
+let indx = 0 ;
 
+function changeTheme(body){
+   body.style.backgroundColor = colors[indx];
+   indx = (indx + 1) % colors.length;
+}
+
+const body = document.getElementsByTagName('body')[0];
+const theme = document.getElementById('theme');
+theme.addEventListener('click', () => changeTheme(body) );
 
 
 
