@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        
+        .poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.right-div{
+   max-width: 366px;
+}
+        </style>
+</head>
+<body class="poppins p-8 bg-[#F4F7FF]">
+    <nav class="h-24 p-8 rounded-2xl items-center flex justify-between bg-[#FFFFFF]">
+        <div class="text-4xl flex gap-2 items-center">
+            <img src="assets/logo.png" alt="">
+            <h1>Dev <span class="font-bold">Board</span></h1>
+        </div>
+        
+        <button  class="font-bold bg-[#3752FD] text-[#FFFFFF] p-4 rounded-2xl">Back to Desk</button>
+        
+    </nav>
+    <main class="text-center mt-4">
+        <h1 class="font-bold text-3xl">Blogs</h1>
+        <div class="text-left my-5 bg-[#FFFFFF] p-5 rounded-xl">
+            <h1 class="font-bold text-xl mb-3">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <hr class="border-b-2">
+            <p>In JavaScript there are several ways to select an element<br>
+            (i) By Tag Name - const element = document.getElementsByTagName('h1'); 
+            here element is an HTML collection of h1 tags.<br>
+            (ii) By Class Name - const element = document.getElementsByClassName('box');
+            here element is an HTML collection of the elements that has the class 'box'<br>
+            (iii) By ID Name - const element = document.getElementById('box1');
+            here element is the single element that has the class "box1"<br>
+            (iv) By Query Selector - const element = document.querySelector('.className');
+            here element is a single element actually the very first element that has the class "myClass"<br>
+            (v) By QuerySelectorAll - const element = document.querySelectorAll('.className');
+            here element is an HTML collection of all the elements that has the class "className".<br>
+            
+        </p>
+        </div>
+    </main>
+</body>
+</html>
