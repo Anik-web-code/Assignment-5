@@ -23,6 +23,7 @@ let assigned = parseInt(taskAssigned.innerText);
 let completed = parseInt(taskCompleted.innerText);
 
 function taskAdjustor(btn,task,time,msg){
+    alert('Board Updated Successfuly');
     assigned--;
     completed++;
     taskAssigned.innerText = `${assigned}`;
@@ -35,6 +36,9 @@ function taskAdjustor(btn,task,time,msg){
     btn.disabled = true;
     btn.style.cursor = "not-allowed";
     btn.style.opacity = "0.6";
+    if(assigned === 0){
+        alert('congrats! You Have completed all the tasks');
+    }
 }
 
 
